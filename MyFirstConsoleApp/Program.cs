@@ -1,8 +1,27 @@
 ﻿internal class Program
 {
     private static void Main(string[] args)
-    {
+    { 
+        MathTeaching();
         OperatorExamples();
+    }
+
+    private static void MathTeaching()
+    {
+        int forCounter = 0;
+        int whileCounter = 0;
+
+        int p = 2;
+        for(int q = 2; q < 32; q = q * 2)
+        {
+            forCounter++;
+            while (p < q)
+            {
+                p = p * 2;
+                whileCounter++;
+            }
+            q = p - q;
+        }
     }
 
     private static void OperatorExamples()
